@@ -1,0 +1,330 @@
+.console {
+  background-color: black;
+  margin: 30px 30px;
+  width: 600px;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.console .panel-body {
+  overflow-y: auto;
+  height: 100%;
+  padding-bottom: 16px;
+  position: absolute;
+  width: 100%;
+  padding-top: 53px;
+}
+.console .panel-body::-webkit-scrollbar {
+  display: none;
+}
+.console .panel-heading {
+  position: absolute;
+  width: 100%;
+}
+.console.console-hidden-left {
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  bottom: 0 !important;
+  top: 100% !important;
+  left: 0 !important;
+  right: 100% !important;
+}
+.console.console-hidden-right {
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  bottom: 0 !important;
+  top: 100% !important;
+  left: 100% !important;
+  right: 0 !important;
+}
+.console.console-hidden-center {
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  bottom: 0 !important;
+  top: 100% !important;
+  left: 50% !important;
+  right: 50% !important;
+}
+.console.console-light {
+  color: white;
+}
+.console.console-light .prompt {
+  -webkit-animation: blink-light 0.5s alternate infinite 300ms 0 ease;
+  -moz-animation: blink-light 0.5s alternate infinite 300ms 0 ease;
+  -ms-animation: blink-light 0.5s alternate infinite 300ms 0 ease;
+}
+@-moz-keyframes blink-light {
+  0% {
+    background: white;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@-webkit-keyframes blink-light {
+  0% {
+    background: white;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@-ms-keyframes blink-light {
+  0% {
+    background: white;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@-o-keyframes blink-light {
+  0% {
+    background: white;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@keyframes blink-light {
+  0% {
+    background: white;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+.console.console-dark .prompt {
+  -webkit-animation: blink-dark 0.5s alternate infinite 300ms 0 ease;
+  -moz-animation: blink-dark 0.5s alternate infinite 300ms 0 ease;
+  -ms-animation: blink-dark 0.5s alternate infinite 300ms 0 ease;
+}
+@-moz-keyframes blink-dark {
+  0% {
+    background: #00ff00;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@-webkit-keyframes blink-dark {
+  0% {
+    background: #00ff00;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@-ms-keyframes blink-dark {
+  0% {
+    background: #00ff00;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@-o-keyframes blink-dark {
+  0% {
+    background: #00ff00;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@keyframes blink-dark {
+  0% {
+    background: #00ff00;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+.console.console-blue {
+  color: #3366CC;
+  border-color: #3366CC;
+}
+.console.console-blue pre {
+  color: #3366CC;
+}
+.console.console-blue .panel-heading {
+  background-color: #3366CC;
+  border-color: #3366CC;
+}
+.console.console-blue .panel-heading .panel-title {
+  display: inline;
+}
+.console.console-blue .prompt {
+  -webkit-animation: blink-blue 0.5s alternate infinite 300ms 0 ease;
+  -moz-animation: blink-blue 0.5s alternate infinite 300ms 0 ease;
+  -ms-animation: blink-blue 0.5s alternate infinite 300ms 0 ease;
+}
+@-moz-keyframes blink-blue {
+  0% {
+    background: #3366CC;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@-webkit-keyframes blink-blue {
+  0% {
+    background: #3366CC;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@-ms-keyframes blink-blue {
+  0% {
+    background: #3366CC;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@-o-keyframes blink-blue {
+  0% {
+    background: #3366CC;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+@keyframes blink-blue {
+  0% {
+    background: #3366CC;
+  }
+  100% {
+    background: 0 0;
+  }
+}
+.console #nasa_files_console_body ul {
+  list-style: none;
+  padding: 0;
+}
+.console #nasa_files_console_body ul li {
+  padding: 5px;
+  border-bottom: solid 1px #3366CC;
+  cursor: pointer;
+}
+.console #nasa_files_console_body ul li:hover {
+  background-color: #3366CC;
+  color: white;
+}
+.console #nasa_files_console_body ul li.red-hover:hover {
+  background-color: red;
+  color: white;
+}
+.console.position-1 {
+  transform: translate(-10px, -53%);
+}
+.console.position-2 {
+  transform: translate(10px, -30%);
+}
+@media screen and (min-width: 992px) {
+  .console.position-2 {
+    left: 65%;
+    bottom: 0;
+    top: 30%;
+    transform: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .console.position-3 {
+    right: 40%;
+    left: 0;
+    bottom: 0;
+    top: 10%;
+    transform: none;
+  }
+}
+.console pre {
+  background: none;
+  border: none;
+}
+.send {
+  float: right;
+  margin-right: 16px;
+  padding-right: 8px;
+  padding-left: 8px;
+  height: 100%;
+  cursor: pointer;
+  display: none;
+}
+.distortion {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(https://media.giphy.com/media/seIuelrIDRVvi/giphy.gif) no-repeat center;
+  background-size: cover;
+}
+.jumpscares {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  pointer-events: none;
+}
+.jumpscares * {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: url(https://i.ytimg.com/vi/4-mm8FumurM/maxresdefault.jpg) no-repeat center;
+  background-size: cover;
+}
+#brutepassword {
+  width: 100%;
+  font-size: 42px;
+  text-align: center;
+  padding: 12px 0;
+}
+.console-long {
+  height: 70%;
+}
+.console-short {
+  height: 50%;
+}
+@media screen and (max-width: 768px) {
+  .console {
+    width: 90%;
+  }
+}
+.console-center {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+}
+#hidden-textarea {
+  position: absolute;
+  width: 100px;
+  height: 0;
+  opacity: 0;
+  left: -9999em;
+}
+.ci {
+  color: #7d8cff;
+}
+.cs {
+  color: #FFFFFF;
+}
+.ce {
+  color: #dd0000;
+}
+.blue {
+  color: #3366CC;
+}
+.red {
+  color: #ff0000;
+}
+#nasa_document_console_body {
+  color: white;
+}
